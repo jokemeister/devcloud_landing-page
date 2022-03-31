@@ -149,3 +149,36 @@
 
 /* /pop-up */
 /* /header */
+
+/* topper */
+.topper {
+    position: relative;
+    width: 100%;
+}
+
+.topper__bg {
+    position: relative;
+    /* height: 768px; */
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/topper_bg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.topper__bg::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 100vh;
+    z-index: 20;
+    background-color: rgba(13, 12, 33, 0.45);
+}
+
+.topper_block {
+    height: 100%;
+}
+/* /topper */
