@@ -1,0 +1,105 @@
+:root {
+    /* font */
+    --globalFontFamily: 'Open Sans', sans-serif;
+    /* /font */
+    /* text */
+    --font-size: 16px;
+    --line-height: 1.362;
+    --font-weight-400: 400;
+
+    --font-size-13: 13px; /* 1 */
+    --font-size-14: 14px; /* 1 */
+    --font-size-18: 18px; /* 5 */
+    --font-size-20: 20px; /* 3 */
+    --font-size-23: 23px; /* 2 */
+    --font-size-26: 26px; /* 2 */
+    --font-size-36: 36px; /* 1 */
+    --font-size-40: 40px; /* 3 */
+    --font-size-48: 48px; /* 1 */
+
+    --line-height-1-16: 1.16;
+    --line-height-1-5: 1.5;
+
+    --font-weight-700: 700;
+    --font-weight-300: 300;
+    /* /text */
+    /* color */
+    --black-700: rgba(0, 0, 0, 1);
+    --green-700: rgba(1, 123, 101, 1);
+    --green-600: rgba(0, 153, 125, 1);
+    --green-600-079: rgba(0, 153, 125, 0.79);
+    --green-500-01: rgba(2, 123, 102, 0.1);
+    --green-400-011: rgba(41, 162, 140, 0.11);
+    --white-700: rgba(255, 255, 255, 1);
+    --red-700: #E11616;
+    /* /color */
+    --width-container-normal: 1450px;
+    --index-header: 999999;
+    --index-z: 9999999;
+    --index-z-navigation-slider: 999;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: var(--globalFontFamily);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height);
+    overflow-y: hidden;
+}
+
+.container {
+    max-width: var(--width-container-normal);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.9375rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.4375rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* btn */
+
+.btn {
+    cursor: pointer;
+    border: none;
+    display: block;
+    font-size: var(--font-size);
+    border-radius: 43px;
+    padding: 12px 39px;
+    transition: all .4s;
+}
+
+.btn-green {
+    background-color: var(--green-600-079);
+}
+
+/* /btn */
