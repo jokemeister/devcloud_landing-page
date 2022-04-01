@@ -3,7 +3,10 @@
     position: fixed;
     z-index: var(--index-header);
     width: 100%;
+<<<<<<< HEAD
     max-width: 100vw;
+=======
+>>>>>>> header
     top: 0;
     left: 0;
     font-size: var(--font-size-18);
@@ -25,9 +28,12 @@
 
 .header__logo-block {
     position: relative;
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
     align-items: center;
+=======
+>>>>>>> header
 }
 
 .header__logo-block::before {
@@ -43,21 +49,34 @@
 }
 
 .header__title {
+<<<<<<< HEAD
     display: flex;
     align-items: center;
     font-weight: var(--font-weight-700);
     margin: 28px 0 28px 11px;
+=======
+    font-weight: var(--font-weight-700);
+>>>>>>> header
 }
 
 .header__menu {
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     justify-content: space-between;
+=======
+    margin: auto;
+    padding: 28px;
+>>>>>>> header
 }
 
 .header__menu__item {
     display: flex;
+<<<<<<< HEAD
     font-weight: var(--font-weight-400);
+=======
+    font-weight: 400;
+>>>>>>> header
     transition: all .4s;
     align-items: center;
     gap: 9px;
@@ -79,7 +98,11 @@
     opacity: 1;
     top: 110%;
     left: 24%;
+<<<<<<< HEAD
     z-index: 3;
+=======
+    z-index: 21;
+>>>>>>> header
 }
 
 .service__pop-up.is-active {
@@ -154,6 +177,7 @@
 }
 
 /* /pop-up */
+<<<<<<< HEAD
 
 /* burger */
 .btn-burger {
@@ -482,3 +506,6 @@
     }
 }
 /* /topper */
+=======
+/* /header */
+>>>>>>> header
