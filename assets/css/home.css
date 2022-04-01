@@ -380,6 +380,10 @@
     .topper__block__btn {
         top: 506px;
     }
+
+    .topper__block__arrow {
+        top: 608px;
+    }
 }
 
 @media screen and (max-width: 600px) {
