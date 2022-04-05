@@ -453,7 +453,7 @@
     }
 
     .header__nav__menu {
-        top: -31px;
+        top: -26px;
     }
 
     .topper__block__title {
@@ -651,6 +651,7 @@
     
     .footer__logo {
         width: 62px;
+        height: 63px;
     }
 
     .footer__title {
@@ -693,11 +694,21 @@
     .footer__list {
         column-gap: 104px;
     }
+
+    .footer__logo {
+        width: 48px;
+        height: 49px;
+    }
 }
 
 @media screen and (max-width:560px) {
     .footer__list {
         column-gap: 74px;
+    }
+
+    .footer__logo {
+        width: 38px;
+        height: 38px;
     }
 
     .footer__link {
