@@ -7,15 +7,17 @@
     --line-height: 1.362;
     --font-weight-400: 400;
 
+    --font-size-12: 12px; /* 1 */
     --font-size-13: 13px; /* 1 */
     --font-size-14: 14px; /* 1 */
+    --font-size-16: 16px; /* 1 */
     --font-size-18: 18px; /* 5 */
     --font-size-20: 20px; /* 3 */
     --font-size-23: 23px; /* 2 */
     --font-size-26: 26px; /* 2 */
     --font-size-36: 36px; /* 1 */
     --font-size-40: 40px; /* 3 */
-    --font-size-48: 48px; /* 1 */
+    --font-size-47: 47px; /* 1 */
 
     --line-height-1-16: 1.16;
     --line-height-1-5: 1.5;
@@ -45,7 +47,13 @@ body {
     font-family: var(--globalFontFamily);
     font-size: var(--font-size-16);
     line-height: var(--line-height);
-    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -103,3 +111,11 @@ a {
 }
 
 /* /btn */
+
+/* global */
+.clear-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* global */
