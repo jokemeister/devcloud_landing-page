@@ -240,6 +240,7 @@
 .side-arrow {
     position: fixed;
     width: 32px;
+    height: 56px;
     right: 15px;
     bottom: 31px;
     z-index: 3;
@@ -316,6 +317,8 @@
 
 .topper__block__arrow {
     top: 561px;
+    width: 32px;
+    height: 54px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -573,6 +576,7 @@
 
 .footer__logo-block__svg {
     display: none;
+
 }
 
 .footer__geo {
@@ -725,6 +729,8 @@
     }
 
     .footer__logo-block__svg {
+        width: 15.17px;
+        height: 21.67px;
         display: inline-block;
         margin-right: 15.83px;
         margin-left: 3px;
