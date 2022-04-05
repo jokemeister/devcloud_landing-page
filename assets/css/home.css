@@ -486,3 +486,127 @@
     }
 }
 /* /topper */
+
+/* footer */
+
+.footer__block {
+padding-top: 66px;
+padding-bottom: 91px;
+}
+
+.footer__link {
+    text-transform: uppercase;
+    font-size: var(--font-size-18);
+    transition: all .4s;
+}
+
+.footer__link:hover {
+    opacity: .4;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 207px;
+    font-weight: var(--font-weight-300);
+}
+
+.footer__list__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer__list__block-logo {
+    flex-direction: column;
+}
+
+.footer__logo-block {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer__logo-block::before {
+    content: "";
+    position: absolute;
+    background-color: var(--white-700);
+    border-radius: 50%;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.footer__logo {
+    width: 80.5px;
+}
+
+.footer__title {
+    display: flex;
+    margin-left: 4.48px;
+    font-weight: var(--font-weight-700);
+}
+
+.footer__geo {
+    margin-left: 85px;
+}
+
+.footer__mail {
+    margin-left: 12px;
+}
+
+.footer__list__block__list__item {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__tel {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__mail,
+.footer__geo,
+.footer__tel,
+.footer__soc-item  {
+    line-height: var(--line-height-1-71);
+}
+
+.footer__img {
+    height: 100%;
+    align-self: center;
+    margin-right: 12px;
+}
+
+.footer__list__block__list__item {
+    margin-bottom: 3px;
+}
+
+.footer__soc-item {
+    margin-top: 13px;
+}
+
+.footer__link__soc {
+    font-size: var(--font-size-13);
+}
+
+.footer__svg:first-child {
+    margin-right: 14.33px;
+}
+
+.footer__svg:not(:first-child) {
+    margin-right: 10.64px;
+    margin-left: 23.62px;
+}
+
+.footer__list__block__right {
+    line-height: var(--line-height-1-85);
+}
+/* /footer */
