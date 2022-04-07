@@ -261,67 +261,55 @@
 .topper {
     position: relative;
     width: 100%;
-}
-
-.topper__bg {
-    position: relative;
-    /* height: 768px; */
-    height: 100%;
-    width: 100%;
     background-image: url(../images/topper_bg.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    min-height: 100vh;
 }
 
-.topper__bg::after{
+.topper::before {
     position: absolute;
     content: "";
     width: 100%;
-    min-height: 100vh;
-    z-index: 2;
-    background-color: rgba(13, 12, 33, 0.45);
-}
-
-.topper_block {
     height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(13, 12, 33, .45);
 }
 
-.topper__block__title,
-.topper__block__btn,
-.topper__block__arrow {
-    position: absolute;
+.topper__block {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     z-index: 3;
-    color: var(--white-700);
     text-align: center;
-    line-height: var(--line-height);
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .topper__block__title {
-    position: absolute;
-    top: 223px;
-    width: 864px;
     font-size: var(--font-size-47);
     font-weight: var(--font-weight-300);
+    max-width: 864px;
+    color: var(--white-700);
 }
 
 .topper__block__btn {
-    top: 459px;
     padding: 12px 38px;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
+    color: var(--white-700);
 }
 
 .topper__block__arrow {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 50px;
     animation: arrowBottom  1s infinite ease-in-out;
     animation-direction: alternate-reverse;
     cursor: pointer;
 }
+
 @keyframes arrowBottom {
     from {
         transform: translateY(0);
@@ -394,19 +382,6 @@
     .container {
         max-width: 737px;
     }
-
-    .topper__block__title {
-        font-size: var(--font-size-40);
-        width: 720px;
-    }
-
-    .topper__block__btn {
-        top: 506px;
-    }
-
-    .topper__block__arrow {
-        top: 608px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -475,8 +450,6 @@
     .topper__block__arrow {
         width: 15px;
         height: 25px;
-        left: calc(100% - 31px);
-        top: 315px;
     }
 }
 
@@ -504,8 +477,6 @@
     .topper__block__arrow {
         width: 15px;
         height: 25px;
-        left: calc(100% - 31px);
-        top: 315px;
     }
 }
 /* /topper */
