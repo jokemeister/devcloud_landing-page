@@ -247,7 +247,15 @@
     display: none;
     font-size: var(--font-size-12);
     padding: 6px 14px;
+}
 
+.side-arrow {
+    position: fixed;
+    width: 32px;
+    height: 56px;
+    right: 15px;
+    bottom: 31px;
+    z-index: 3;
 }
 
 /* /burger */
@@ -267,7 +275,6 @@
 .topper::before {
     position: absolute;
     content: "";
-    width: 100%;
     height: 100%;
     left: 0;
     top: 0;
@@ -433,7 +440,7 @@
     }
 
     .header__nav__menu {
-        top: -31px;
+        top: -26px;
     }
 
     .topper__block__title {
@@ -441,7 +448,6 @@
         width: 290px;
         top: 127px;
     }
-
 
     .topper__block__btn {
         display: none;
@@ -453,7 +459,7 @@
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 375px) {
     .container {
         max-width: 290px;
     }
@@ -462,6 +468,18 @@
         display: inline-block;
     }
 
+    .topper__bg {
+        background-position: -131px center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+        min-height: 371px;
+    }
+
+    .topper__bg,
+    .topper__bg::after {
+        min-height: 371px;
+    }
 
     .topper__block__title {
         font-size: var(--font-size-18);
@@ -540,6 +558,7 @@
 
 .footer__logo-block__svg {
     display: none;
+
 }
 
 .footer__geo {
@@ -589,6 +608,8 @@
 .footer__list__block__right {
     line-height: var(--line-height-1-85);
 }
+
+
 @media screen and (max-width: 1000px) {
     .footer__block {
         margin-left: 45px;
@@ -612,6 +633,7 @@
     
     .footer__logo {
         width: 62px;
+        height: 63px;
     }
 
     .footer__title {
@@ -654,11 +676,21 @@
     .footer__list {
         column-gap: 104px;
     }
+
+    .footer__logo {
+        width: 48px;
+        height: 49px;
+    }
 }
 
 @media screen and (max-width:560px) {
     .footer__list {
         column-gap: 74px;
+    }
+
+    .footer__logo {
+        width: 38px;
+        height: 38px;
     }
 
     .footer__link {
@@ -690,11 +722,12 @@
     }
 
     .footer__logo-block__svg {
+        width: 15.17px;
+        height: 21.67px;
         display: inline-block;
         margin-right: 15.83px;
         margin-left: 3px;
     }
-    
 
     .footer__geo {
         display: flex;
