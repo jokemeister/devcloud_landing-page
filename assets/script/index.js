@@ -6,4 +6,4 @@ document.addEventListener('DOMContentLoaded', () => {
     popUp();
     btnBurgerChecked();
     slider();
-})
+});
