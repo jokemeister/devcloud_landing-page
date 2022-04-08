@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/home.css">
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+        <!-- swiper -->
+    <link rel="stylesheet" href="./assets/css/slider.css">
 </head>
 <body>
     <header class="header">
@@ -21,37 +25,50 @@
                 <p class="header__title">DEVCLOUD SOLUTIONS</p>
             </a>
             <nav class="header__menu">
-                <a class="header__menu__item" href="#">
-                    Главная
-                </a>
-                <a class="js--header_service header__menu__item header__service" href="#">
-                    Услуги
-                    <svg viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L7 7L13 1" stroke="white"/>
-                    </svg>
-                </a>
-                <a class="header__menu__item" href="#">
-                    Как мы работаем
-                </a>
-                <a class="header__menu__item" href="#">
-                    Портфолио
-                </a>
-                <a class="header__menu__item" href="#">
-                    О нас
-                </a>
-                <a class="header__menu__item" href="#">
-                    Контакты
-                </a>
-                <div class="js--service_pop-up service__pop-up">
-                    <div class="service__pop-up__left">
-                        <h3 class="service__pop-up__title">НАШИ УСЛУГИ</h3>
-                        <a class="service__pop-up__text-black" href="#">Мобильные приложения</a>
-                        <a class="service__pop-up__text-black" href="#">Веб приложения</a>
-                    </div>
-                    <div class="service__pop-up__right">
-                        <img src="./assets/images/pop-up.png" alt="computer">
-                    </div>
-                </div>
+                <ul class="header__menu__list clear-list">
+                    <li class="header__menu__item">
+                        <a class="header__menu__item" href="#">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="header__menu__item menu-item-has-children">
+                        <a class="header__menu__link header__service js--header_service" href="#">
+                            Услуги
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="white"/>
+                            </svg>
+                        </a>
+                        <div class="sub-menu service__pop-up js--service_pop-up">
+                            <div class="service__pop-up__left">
+                                <h3 class="service__pop-up__title">НАШИ УСЛУГИ</h3>
+                                <a class="service__pop-up__text-black" href="#">Мобильные приложения</a>
+                                <a class="service__pop-up__text-black" href="#">Веб приложения</a>
+                            </div>
+                            <img class="service__pop-up__img" src="./assets/images/pop-up.png" alt="computer">    
+                        </div>
+
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            Как мы работаем
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            Портфолио
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            О нас
+                        </a>
+                    </li>
+                    <li class="header__menu__item">
+                        <a class="header__menu__link" href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <button class="js--btn-burger btn btn-burger">
                 <span class="btn-burger-span"></span>
@@ -67,21 +84,43 @@
             </nav>
         </div>
     </header>
+    
     <main class="main">
-        <section class="topper">
-            <div class="topper__bg"></div>
+        <section class="topper bg-img">
             <div class="topper__block">
                 <h1 class="topper__block__title">Компания по разработке програмного обеспечения</h1>
                 <button class="topper__block__btn btn btn-green js--topper-btn">Запросить консультацию</button>
-                <svg class="js--topper__block__arrow topper__block__arrow" viewBox="0 0 34 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M17 0V54M17 54L1 38M17 54L33 38" stroke="white"/>
-                </svg>
-
+            </div>
+            <svg class="js--topper__block__arrow topper__block__arrow" width="34" height="55" viewBox="0 0 34 55" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 0V54M17 54L1 38M17 54L33 38" stroke="white"/>
+            </svg>
             </div>
         </section>
 
-        <section class="statistics">
-            <svg class="js--arrow-bottom-top side-arrow" viewBox="0 0 27 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <section class="stats">
+            <div class="swiper-stats swiper mySwiper">
+                <div class="swiper-stats-wrapper swiper-wrapper">
+                  <div class="swiper-stats-slide swiper-slide">
+                      <h4 class="swiper-stats-slide-title">98%</h4>
+                      <p class="swiper-stats-slide-text">завершенных проектов успешно</p>
+                  </div>
+                  <div class="swiper-stats-slide swiper-slide">
+                    <h4 class="swiper-stats-slide-title">30%</h4>
+                    <p class="swiper-stats-slide-text">календарных дней до первого релиза</p>
+                </div>
+                <div class="swiper-stats-slide swiper-slide">
+                    <h4 class="swiper-stats-slide-title">5+</h4>
+                    <p class="swiper-stats-slide-text">дней от идеи до готовой концепции</p>
+                </div>
+                <div class="swiper-stats-slide swiper-slide">
+                    <h4 class="swiper-stats-slide-title">+20%</h4>
+                    <p class="swiper-stats-slide-text">к эффективности бизнеса</p>
+                    <p class="swiper-stats-slide-free"></p>
+                </div>
+                </div>
+                <div class="swiper-stats-pagination"></div>
+            </div>
+            <svg class="js--arrow-bottom-top side-arrow" viewBox="0 0 27 45" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.5 45L13.5 1M13.5 1L26 14.037M13.5 1L1 14.037" stroke="black"/>
             </svg>
         </section>
