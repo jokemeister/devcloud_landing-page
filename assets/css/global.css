@@ -109,16 +109,25 @@ a {
     display: block;
     font-size: var(--font-size);
     border-radius: 43px;
-    padding: 12px 39px;
     transition: all .4s;
 }
 
 .btn-green {
+    color: var(--white-700);
     background-color: var(--green-600-079);
+    padding: 12px 39px;
 }
 
 .btn-black {
+    color: var(--white-700);
     background-color: var(--black-700);
+    padding: 16px 38.5px;
+}
+
+.btn-white {
+    color: var(--black-700);
+    background-color: var(--white-700);
+    padding: 16px 70px;
 }
 
 /* /btn */
