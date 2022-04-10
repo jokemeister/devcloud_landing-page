@@ -1,3 +1,4 @@
+
 /* topper */
 .main {
     width: 100%;
@@ -18,7 +19,6 @@
     top: 0;
     background-color: rgba(13, 12, 33, .45);
     backdrop-filter: blur(2px);
-}
 
 .topper__block {
     min-height: 100vh;
@@ -42,6 +42,7 @@
     padding: 12px 38px;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
+    color: var(--white-700);
 }
 
 .topper__block__arrow {
@@ -211,7 +212,7 @@
     }
 
     .topper {
-        background-position: -240px center;
+        background-position: -130px center;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1;
@@ -232,16 +233,6 @@
     .topper__block__arrow {
         width: 15px;
         height: 25px;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .topper {
-        background-position: -130px center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-        min-height: 371px;
     }
 }
 /* /topper */
@@ -633,5 +624,6 @@
         display: none;
     }
 }
-
 /* /guarantees */
+/* /footer */
+/* /header */
