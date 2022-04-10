@@ -1,3 +1,4 @@
+
 /* topper */
 .main {
     width: 100%;
@@ -18,7 +19,6 @@
     top: 0;
     background-color: rgba(13, 12, 33, .45);
     backdrop-filter: blur(2px);
-}
 
 .topper__block {
     min-height: 100vh;
@@ -42,6 +42,7 @@
     padding: 12px 38px;
     font-size: var(--font-size-16);
     font-weight: var(--font-weight-400);
+    color: var(--white-700);
 }
 
 .topper__block__arrow {
@@ -623,5 +624,6 @@
         display: none;
     }
 }
-
 /* /guarantees */
+/* /footer */
+/* /header */
