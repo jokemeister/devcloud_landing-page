@@ -211,7 +211,7 @@
     }
 
     .topper {
-        background-position: -240px center;
+        background-position: -130px center;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 1;
@@ -232,16 +232,6 @@
     .topper__block__arrow {
         width: 15px;
         height: 25px;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .topper {
-        background-position: -130px center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: 1;
-        min-height: 371px;
     }
 }
 /* /topper */
