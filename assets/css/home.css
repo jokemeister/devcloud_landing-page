@@ -626,5 +626,23 @@
     }
 }
 /* /guarantees */
-/* /footer */
-/* /header */
+
+/* services */
+.swiper-services_slide {
+    position: relative;
+    background-color: var(--white-700);
+    border-radius: 27px;
+    box-shadow: 0 3px 11px 0 rgba(3, 74, 62, 0.56);
+    overflow: hidden;
+}
+
+.swiper-services_slide::after {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    background-color: #017B65;
+    box-shadow: 4px -1px 7px rgba(0, 0, 0, 0.49);
+}
+
+/* /services */
