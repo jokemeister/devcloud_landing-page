@@ -31,15 +31,21 @@ const slider = () => {
 
     // swiper Services
 
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 768) {
       let servicesSlider = new Swiper(".js--swiper-services", {
         enabled: true,
         slidesPerView: 2,
         spaceBetween: 30,
         centeredSlides: true,
+        loop: true,
         pagination: {
+          bulletActiveClass: 'swiper-services-pagination-bullet-is-active',
+          bulletClass: 'swiper-services-pagination-bullet',
           el: ".swiper-services-pagination",
           clickable: true,
+          renderBullet: function(index, className) {
+            return '<div class="' + className + '"' + 'data-index="' + (index + 1) + '">' + "</div>";
+          },
         },
       });
     } else {
@@ -47,6 +53,8 @@ const slider = () => {
         slidesPerView: 4,
         enabled: false,
       });
+      let pagination = document.querySelector('.swiper-services-pagination');
+      pagination.classList.add('non-active');
     }
 
     // /swiper Services
