@@ -731,6 +731,8 @@
 .swiper-services__slide__bottom-line__text {
     margin-left: 18px;
     margin-right: 22.5px;
+    font-size: 16px;
+    font-weight: var(--font-weight-300);
 }
 
 .swiper-services__slide__bottom-line__arrow {
@@ -747,6 +749,22 @@
         max-width: 340px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .swiper-services__slide__title,
+    .swiper-services__slide__text,
+    .swiper-services__slide__bottom-line {
+        margin-left: 32px;
+    }
+    .swiper-services__wrapper {
+        gap: 21px;
+        justify-content: center;
+    }
+    .swiper-services__slide {
+        max-width: 340px;
+    }
+}
+
 /* services__slide */
 /* services__pagination */
 
