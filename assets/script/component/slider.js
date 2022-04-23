@@ -31,7 +31,7 @@ const slider = () => {
 
     // swiper Services
 
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768 && window.innerWidth > 500) {
       let servicesSlider = new Swiper(".js--swiper-services", {
         enabled: true,
         slidesPerView: 2,
@@ -48,6 +48,13 @@ const slider = () => {
           },
         },
       });
+    } else if (window.innerWidth <= 500){
+      let servicesSlider = new Swiper(".js--swiper-services", {
+        slidesPerView: 1,
+        enabled: false,
+      });
+      let pagination = document.querySelector('.swiper-services-pagination');
+      pagination.classList.add('non-active');
     } else {
       let servicesSlider = new Swiper(".js--swiper-services", {
         slidesPerView: 4,
