@@ -63,8 +63,31 @@ const slider = () => {
       let pagination = document.querySelector('.swiper-services-pagination');
       pagination.classList.add('non-active');
     }
-
     // /swiper Services
+
+    // swiper Projects
+    if (window.innerWidth <= 768) {
+      let projectsSlider = new Swiper(".js--swiper-projects", {
+        pagination: {
+          bulletActiveClass: 'swiper-projects-pagination-bullet-is-active',
+          bulletClass: 'swiper-projects-pagination-bullet',
+          el: ".swiper-projects-pagination",
+          clickable: true,
+          renderBullet: function(index, className) {
+            return '<div class="' + className + '"' + 'data-index="' + (index + 1) + '">' + "</div>";
+          },
+        },
+      });
+    } else {
+      let projectsSlider = new Swiper(".js--swiper-projects", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    };
+
+    // /swiper Projects
 }
 
 export default slider;
