@@ -23,7 +23,9 @@
     --line-height-1: 1;
     --line-height-1-16: 1.16;
     --line-height-1-38: 1.387;
+    --line-height-1-39: 1.397;
     --line-height-1-5: 1.5;
+    --line-height-1-53: 1.53214286;
     --line-height-1-71: 1.71;
     --line-height-1-85: 1.85;
     --line-height-2-22: 2.22;
@@ -34,12 +36,13 @@
     /* /text */
     /* color */
     --black-700: rgba(0, 0, 0, 1);
-    --green-700: rgba(1, 123, 101, 1);
+    --gray--700: rgba(185, 185, 185, 1);
+    --green-700: rgba(1, 123, 101, 1); /* контрастный цвет 2 */
     --green-600: rgba(0, 153, 125, 1);
-    --green-600-079: rgba(0, 153, 125, 0.79);
-    --green-500-01: rgba(2, 123, 102, 0.1);
+    --green-600-079: rgba(0, 153, 125, .79);
+    --green-500-01: rgba(2, 123, 102, .1);
     --green-400: rgba(41, 162, 140, 1);
-    --green-400-011: rgba(41, 162, 140, 0.11);
+    --green-400-011: rgba(41, 162, 140, .11);
     --white-700: rgba(255, 255, 255, 1);
     --red-700: #E11616;
     /* /color */
@@ -144,6 +147,10 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* .nowrap {
+    white-space: nowrap;
+} */
 /* /global */
 
 /* header */
