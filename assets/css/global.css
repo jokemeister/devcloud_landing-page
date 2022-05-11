@@ -223,7 +223,7 @@ a {
     position: relative;
 }
 
-.header__menu__link {
+.header__menu__item__link {
     display: flex;
     font-weight: var(--font-weight-400);
     transition: all .4s;
@@ -231,15 +231,15 @@ a {
     gap: 9px;
 }
 
-.header__menu__link > svg{
+.header__menu__item__link > svg{
     transition: all .4s;
 }
 
-.header__menu__link.is-active > svg{
+.header__menu__item__link.is-active > svg{
     transform: rotate(180deg);
 }
-.header__menu__link:hover,
-.header__menu__link:focus {
+.header__menu__item__link:hover,
+.header__menu__item__link:focus {
     opacity: .8;
 }
 
