@@ -3,10 +3,8 @@ const headerOpacity = () => {
     let options = {
         threshold: [1]
     }
-    console.log(header);
     let callback = function(entries, observer) {
         entries.forEach(entry => {
-            console.log(entry);
             if (entry.isIntersecting) header.classList.toggle('is-active');
             // else header.classList.add('is-active');
         })

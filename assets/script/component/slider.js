@@ -19,13 +19,16 @@ const slider = () => {
       },
       breakpoints: {
         480: {
-            slidesPerView: 4,
-            enabled: false
+          slidesPerView: 4,
+          enabled: false
         }
       }
   });
   let statsPagination = document.querySelector('.swiper-stats-pagination');
   statsPagination.classList.add('non-active');
+  if (window.innerWidth <= 480) {
+    statsPagination.classList.remove('non-active');
+  }
   // /swiper Stats
 
   // swiper Services
@@ -50,13 +53,11 @@ const slider = () => {
           }
         },
         768: {
-            slidesPerView: 4,
-            enabled: false
+          slidesPerView: 4,
+          enabled: false
         }
       }
   });
-  let servicesPagination = document.querySelector('.swiper-services-pagination');
-  servicesPagination.classList.add('non-active');
   // /swiper Services
 
   // swiper Projects
@@ -65,20 +66,26 @@ const slider = () => {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    pagination: {
+      bulletActiveClass: 'swiper-projects-pagination-bullet-is-active',
+      bulletClass: 'swiper-projects-pagination-bullet',
+      el: ".swiper-projects-pagination",
+      clickable: true,
+      renderBullet: function(index, className) {
+        return '<div class="' + className + '"' + 'data-index="' + (index + 1) + '">' + "</div>";
+      }
+    },
     breakpoints: {
       768: {
-        pagination: {
-          bulletActiveClass: 'swiper-projects-pagination-bullet-is-active',
-          bulletClass: 'swiper-projects-pagination-bullet',
-          el: ".swiper-projects-pagination",
-          clickable: true,
-          renderBullet: function(index, className) {
-            return '<div class="' + className + '"' + 'data-index="' + (index + 1) + '">' + "</div>";
-          }
-        }
+        pagination: false,
       }
     }
   });
+  let projectsPagination = document.querySelector('.swiper-projects-pagination');
+  projectsPagination.classList.add('non-active');
+  if (window.innerWidth <= 768) {
+    projectsPagination.classList.remove('non-active');
+  }
   // /swiper Projects
 };
 
