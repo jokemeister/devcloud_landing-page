@@ -16,6 +16,7 @@
     --font-size-22: 22px; /* 1 */
     --font-size-23: 23px; /* 2 */
     --font-size-26: 26px; /* 2 */
+    --font-size-28: 28px; /* 1 */
     --font-size-36: 36px; /* 1 */
     --font-size-40: 40px; /* 3 */
     --font-size-47: 47px; /* 1 */
@@ -38,6 +39,8 @@
     --black-700: rgba(0, 0, 0, 1);
     --gray--700: rgba(185, 185, 185, 1);
     --green-700: rgba(1, 123, 101, 1); /* контрастный цвет 2 */
+    --green-700-04: rgba(1, 123, 101, 0.4);
+    --green-700-019: rgba(1, 123, 101, 0.19);
     --green-600: rgba(0, 153, 125, 1);
     --green-600-079: rgba(0, 153, 125, .79);
     --green-500-01: rgba(2, 123, 102, .1);
@@ -45,6 +48,7 @@
     --green-400-011: rgba(41, 162, 140, .11);
     --white-700: rgba(255, 255, 255, 1);
     --red-700: #E11616;
+
     /* /color */
     --width-container-normal: 1450px;
     --index-header: 999999;
@@ -107,6 +111,7 @@ a {
 
 /* btn */
 .btn {
+    font-family: var(--globalFontFamily);
     cursor: pointer;
     border: none;
     display: block;
@@ -668,4 +673,7 @@ a {
     }
 }
 /* /footer */
+
+
 /* global */
+
