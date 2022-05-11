@@ -24,8 +24,8 @@ const slider = () => {
         }
       }
   });
-  let pagination = document.querySelector('.swiper-stats-pagination');
-  pagination.classList.add('non-active');
+  let statsPagination = document.querySelector('.swiper-stats-pagination');
+  statsPagination.classList.add('non-active');
   // /swiper Stats
 
   // swiper Services
@@ -55,8 +55,8 @@ const slider = () => {
         }
       }
   });
-  let pagination = document.querySelector('.swiper-services-pagination');
-  pagination.classList.add('non-active');
+  let servicesPagination = document.querySelector('.swiper-services-pagination');
+  servicesPagination.classList.add('non-active');
   // /swiper Services
 
   // swiper Projects
