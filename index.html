@@ -18,7 +18,7 @@
 <body>
 <!-- header -->
 
-    <header class="header">
+    <header class="header js--header">
         <div class="header__block container">
             <a href="#" class="header__logo-link">
                 <div class="header__logo-block">
@@ -29,12 +29,12 @@
             <nav class="header__menu">
                 <ul class="header__menu__list clear-list">
                     <li class="header__menu__item">
-                        <a class="header__menu__item" href="#">
+                        <a class="header__menu__item__link" href="#">
                             Главная
                         </a>
                     </li>
                     <li class="header__menu__item menu-item-has-children">
-                        <a class="header__menu__link header__service js--header_service" href="#">
+                        <a class="header__menu__item__link header__service js--header_service" href="#">
                             Услуги
                             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 1L7 7L13 1" stroke="white"/>
@@ -51,22 +51,22 @@
 
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__item__link" href="#">
                             Как мы работаем
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__item__link" href="#">
                             Портфолио
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__item__link" href="#">
                             О нас
                         </a>
                     </li>
                     <li class="header__menu__item">
-                        <a class="header__menu__link" href="#">
+                        <a class="header__menu__item__link" href="#">
                             Контакты
                         </a>
                     </li>
@@ -83,7 +83,7 @@
     <main class="main">
         
     <!-- topper-section -->
-        <section class="topper bg-img">
+        <section class="topper bg-img js--topper">
             <div class="topper__block">
                 <h1 class="topper__block__title">Компания по разработке програмного обеспечения</h1>
                 <button class="topper__block__btn btn btn-green js--topper-btn">Запросить консультацию</button>
@@ -192,7 +192,7 @@
                         </h3>
                         <p class="swiper-services__slide__text-second swiper-services__slide__text">Уже более 10 лет мы освоили лучшие веб-технологии для реализации проектов, в которые вложены инвестиции. Надежный лидер рынка в разработке высокопроизводительных <span class="nowrap">веб-интерфейсов</span> для любого бизнеса.</p>
                         <a class="swiper-services__slide__bottom-line-second swiper-services__slide__bottom-line" href="#">
-                            <svg class="swiper-services__slide__bottom-line_cloud swiper-services__slide__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="swiper-services__slide__bottom-line__cloud swiper-services__slide__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
                             </svg>
                             <p class="swiper-services__slide__bottom-line__text">Узнать больше</p>
@@ -216,7 +216,7 @@
                         </h3>
                         <p class="swiper-services__slide__text-third swiper-services__slide__text">Мы не только идем в ногу с «тенденциями дизайна», но и ориентируемся на пользователей, что делает наши услуги наиболее эффективными на всем рынке. Превосходство с 2010 года. Создадим идеальное веб приложение именно для вас.</p>
                         <a class="swiper-services__slide__bottom-line-third swiper-services__slide__bottom-line" href="#">
-                            <svg class="swiper-services__slide__bottom-line_cloud swiper-services__slide__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="swiper-services__slide__bottom-line__cloud swiper-services__slide__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
                             </svg>
                             <p class="swiper-services__slide__bottom-line__text">Узнать больше</p>
@@ -257,14 +257,162 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 2</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 3</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 4</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 5</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 6</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 7</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 8</div>
-                        <div class="swiper-projects__slide swiper-slide">Slide 9</div>
+                        <div class="swiper-projects__slide swiper-slide">
+                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-projects__slide swiper-slide">
+                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-projects__slide swiper-slide">
+                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-projects__slide swiper-slide">                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div></div>
+                        <div class="swiper-projects__slide swiper-slide">                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div></div>
+                        <div class="swiper-projects__slide swiper-slide">
+                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-projects__slide swiper-slide">
+                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-projects__slide swiper-slide">
+                            <h3 class="swiper-projects__slide__title__adapted">Компания по производству фотокниг Fototeca</h3>
+                            <div class="swiper-projects__slide__block">
+                                <img class="swiper-projects__slide__block__img" src="./assets/images/fototeca.png" alt="Fototeca">
+                                <div class="swiper-projects__slide__block__right">
+                                    <h3 class="swiper-projects__slide__block__right__title">Компания по производству фотокниг Fototeca</h3>
+                                    <p class="swiper-projects__slide__block__right__text">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту. Была создана система, которая позволяет профессиональному фотографу – клиенту компании — формировать изделие (фотокнигу) в нужном формате и виде, оплатить и сразу передать заказ в производство.</p>
+                                    <p class="swiper-projects__slide__block__right__text-adapted">Программное решение, автоматизирующее производство изделий – от создания дизайна до выдачи клиенту</p>
+                                    <a class="swiper-projects__slide__block__right__bottom-line" href="#">
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__cloud swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 38 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.4643 3.172C12.838 1.13486 15.8656 0.00978194 19 0C25.3888 0 30.6921 4.72727 31.2693 10.8231C35.0503 11.3549 38 14.5056 38 18.3725C38 22.6176 34.4422 26 30.1316 26H8.97987C4.0565 26 0 22.1378 0 17.2971C0 13.13 3.00675 9.67909 6.98725 8.80454C7.32687 6.76473 8.645 4.732 10.4643 3.172ZM12.0151 4.96127C10.2172 6.50473 9.27675 8.36491 9.27675 9.82091V10.8798L8.21988 10.9956C4.902 11.3573 2.375 14.0684 2.375 17.2971C2.375 20.7645 5.29625 23.6364 8.97987 23.6364H30.1316C33.2025 23.6364 35.625 21.2444 35.625 18.3725C35.625 15.4984 33.2025 13.1064 30.1316 13.1064H28.9441V11.9245C28.9465 6.67727 24.529 2.36364 19 2.36364C16.4347 2.37383 13.9575 3.29593 12.0151 4.96364V4.96127Z" fill="currentColor"/>
+                                        </svg>
+                                        <p class="swiper-projects__slide__block__right__bottom-line__text">Узнать больше</p>
+                                        <svg class="swiper-projects__slide__block__right__bottom-line__arrow swiper-projects__slide__block__right__bottom-line__svg" viewBox="0 0 45 11" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M0.0205688 6.23984H42.7088M42.7088 6.23984L31.2559 0.950684M42.7088 6.23984L31.2559 10.4712" stroke="currentColor"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-projects__button-next swiper-button-next"></div>
                     <div class="swiper-projects__button-prev swiper-button-prev"></div>

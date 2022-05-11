@@ -46,6 +46,7 @@
     --green-500-01: rgba(2, 123, 102, .1);
     --green-400: rgba(41, 162, 140, 1);
     --green-400-011: rgba(41, 162, 140, .11);
+    --green-400-09: rgba(41, 162, 140, .9);
     --white-700: rgba(255, 255, 255, 1);
     --red-700: #E11616;
 
@@ -171,11 +172,17 @@ a {
     color: var(--white-700);
 }
 
+.header.is-active {
+    background-color: var(--green-400-09);
+}
+
 .header__block {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .header__logo-link {
     position: relative;
@@ -223,7 +230,7 @@ a {
     position: relative;
 }
 
-.header__menu__link {
+.header__menu__item__link {
     display: flex;
     font-weight: var(--font-weight-400);
     transition: all .4s;
@@ -231,15 +238,15 @@ a {
     gap: 9px;
 }
 
-.header__menu__link > svg{
+.header__menu__item__link > svg{
     transition: all .4s;
 }
 
-.header__menu__link.is-active > svg{
+.header__menu__item__link.is-active > svg{
     transform: rotate(180deg);
 }
-.header__menu__link:hover,
-.header__menu__link:focus {
+.header__menu__item__link:hover,
+.header__menu__item__link:focus {
     opacity: .8;
 }
 
@@ -365,18 +372,6 @@ a {
 
 .btn-burger::after {
     bottom: 0;
-}
-
-.header__nav {
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 81px;
-    width: 50%;
-}
-
-.header__nav.is-active {
-    display: block;
 }
 
 .header__nav__menu {

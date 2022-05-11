@@ -864,10 +864,6 @@
     background: var(--black-700)
 }
 
-.swiper-stats-pagination.non-active {
-    display: none;
-}
-
 /* /services__pagination */
 
 /* /services */
@@ -965,7 +961,7 @@
 
 /* swiper-projects-pagination */
 .swiper-projects-pagination {
-    display: none;
+    display: flex;
     justify-content: center;
     gap: 6px;
     height: 4px;
@@ -992,6 +988,9 @@
     background: var(--green-700);
     margin-top: -2px !important;
 }
+
+
+
 /* /swiper-projects-pagination */
 
 .projects__btn {
